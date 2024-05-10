@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "fastify": "^4.27.0",
+    "prisma": "^5.13.0"
+  },
+  "scripts": {
+    "dev": "tsx watch src/main/server.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.11",
+    "tsx": "^4.9.4",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,8 @@
+version: '3'
+services:
+  address_crud:
+    image: address_crud
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/data
