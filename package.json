@@ -1,10 +1,12 @@
 {
   "dependencies": {
+    "@fastify/cors": "^9.0.1",
+    "@prisma/client": "^5.13.0",
     "fastify": "^4.27.0",
     "prisma": "^5.13.0"
   },
   "scripts": {
-    "dev": "tsx watch src/main/server.ts"
+    "dev": "tsx watch src/server/server.ts"
   },
   "devDependencies": {
     "@types/node": "^20.12.11",
