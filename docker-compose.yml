@@ -1,9 +1,0 @@
-version: '3'
-
-services:
-  backend:
-    image: sqlite
-    ports:
-      - "8080:8080"
-    volumes:
-      - ./data:/app/data  # Mount a volume to persist the SQLite database file
