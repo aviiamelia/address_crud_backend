@@ -5,13 +5,15 @@ import { main } from "../infra/index";
 import { createAddress } from "../controllers/createAddress";
 import { updateAddress } from "../controllers/updateAddress";
 import { deleteAddress } from "../controllers/deleteAddress";
+import { getAddress } from "../controllers/getAddress";
 const app = fastify();
 const port = 3333;
 app.register(cors, {
   origin: "*",
 });
+app.get("/address", getAddress);
 app.post("/address", createAddress);
-app.patch("/address/:id", updateAddress);
+app.put("/address/:id", updateAddress);
 app.delete("/address/:id", deleteAddress);
 app
   .listen({
